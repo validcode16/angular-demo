@@ -1,0 +1,55 @@
+
+<div class="demo-clom">
+    <div class="container">
+        <h3>Demo Practice</h3> 
+    
+    <div>
+        <h2>Our Course</h2>
+
+        <!-- ngIf property -->
+        
+        <p>ngIf property</p>
+        <div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+        <ng-template #coursesList>
+            <h3>List of Courses</h3>
+        </ng-template>
+        <ng-template #noCourses>
+            <h3>No Courses yet</h3>
+        </ng-template>
+
+          <!-- Hidden prperty -->
+          <p>Hidden prperty</p>
+          <div [hidden]="pcourses.length == 0">
+             <h3>List of Angular Courses</h3>
+             <ul>
+                <li>avc</li>
+                <li>vfg</li>
+                <li>mhgf</li>
+             </ul>
+          </div>
+          <div [hidden]="pcourses.length > 0">
+                    <h3>No Angular Courses yet</h3>
+          </div>
+
+           <!-- *ng For-->
+           <p>ng For loop</p>
+
+           <button (click)="onAdd()">Add List</button>
+           <!-- <button (click)="onRemove()">Remove List</button> -->
+         <ul>
+            <li *ngFor="let course of ncouses">
+            {{ course.id}}, {{ course.name}}
+        
+        <button (click)="onRemove(course)">Remove</button>
+        <button (click)="onChange(course)">Change</button>
+    </li>
+        </ul>
+
+          <!-- <Chnage course name -->
+<br><br>
+
+
+    </div>.
+    <br><br>
+    </div> 
+</div>

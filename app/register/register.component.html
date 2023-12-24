@@ -1,0 +1,27 @@
+<div class="reg-orm">
+    <h1>Register</h1>
+
+    <div class="container">
+        <div class="frm-data">
+            <form [formGroup]="userForm">
+                <label>First Name*</label>    
+                <input type="text" name="first_name" formControlName="firstName"><br> 
+                <span *ngIf="firstName && firstName.invalid && firstName.touched" class="error">This is a required field</span><br>
+                <label>Last Name</label>
+                <input type="text" name="last_name" formControlName="lastName"><br> 
+                <span *ngIf="lastName && lastName.invalid && lastName.touched" class="error">This is a required field</span><br>
+                <label>Email*</label>
+                <input type="email" name="usr_email" formControlName="userEmail"><br> 
+                <span *ngIf="userEmail && userEmail.invalid && userEmail.touched" class="error">This is a required field</span><br>
+                <label>Password*</label>
+                <input type="password" name="usr_pass" formControlName="userPass"><br>           
+                <span *ngIf="userPass && userPass.invalid && userPass.touched" class="error">This is a required field</span><br>
+                <div class="btn-container button-container">
+                    <button type="submit" (click)="saveData(userForm.value)" [disabled]="userForm.invalid">Register</button>
+                </div>
+            </form>
+            <div>{{showMessage}}</div>
+            <p><a routerLink="/login">Login</a> </p>
+        </div>
+    </div>
+</div>

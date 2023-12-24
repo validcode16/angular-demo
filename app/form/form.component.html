@@ -1,0 +1,23 @@
+<div class="form-container">
+<form #userForm="ngForm">
+    <label>First Name*</label>
+
+    <input name="first_name" #first="ngModel" ngModel placeholder="Enter First Name" required maxlength="30" pattern="[A-Za-z]+" ><br>
+    <span *ngIf="first.touched && first.invalid" class="error">This is a required field</span>
+    <br>
+    <label>Last Name</label>
+    <input name="last_name" #last="ngModel" ngModel placeholder="Enter Last Name" required><br>
+    <span *ngIf="last.touched && last.invalid" class="error">This is a required field</span>
+    <br>
+    <label>Course</label>
+    <input name="course" #course="ngModel" ngModel placeholder="Enter Course Name" required><br>
+    <span *ngIf="course.touched && course.invalid" class="error">This is a required field</span>
+    <br>
+    <label>Course Month</label>
+    <input name="course_month" #course_month="ngModel" ngModel placeholder="Enter course month" required><br>
+    <span *ngIf="course_month.touched && course_month.invalid" class="error">This is a required field</span>
+    <div class="btn-container">
+        <button (click)="submitForm(userForm.value)" [disabled]="userForm.invalid">Submit</button>
+    </div>
+</form>
+</div>

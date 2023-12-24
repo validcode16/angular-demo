@@ -1,0 +1,11 @@
+<p>third works!</p>
+
+
+<p>{{firstName}}</p>
+<h1>{{displayName}}</h1>
+
+
+<input placeholder="First Name" [disabled]="firstName == 'Amit'" 
+name="fname" (keyup)="keyPressed($event)" [(ngModel)]="displayName">
+<!--  we can use keyup, blur, onclick,   (blur)="keyPressed($event)"-->
+<button (click)="buttonClick(); showName();">Click me</button>

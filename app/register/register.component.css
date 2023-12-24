@@ -1,0 +1,81 @@
+.r-form {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #d4d4d4;
+}
+
+.error {
+	color: #c40909;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.r-form .btn-container {
+    padding: 12px;
+}
+
+.r-form button {
+    background: #1a1aa9;
+    color: #fff;
+    border: 1px solid #1a1aa9;
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 6px 19px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity:0.7;    
+    cursor: none;
+}
+
+button:disabled:hover{
+    opacity:0.7;    
+    cursor: none;
+    background: #1a1aa9;
+    color: #fff;
+    border: 1px solid #1a1aa9;
+}
+
+.reg-orm {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0px -1px 10px rgb(91 47 125 / 50%);
+    margin-top: 50px;
+    border-radius: 14px;
+    margin-bottom: 40px;
+}
+
+button {
+    width: 100%;
+    max-width: 156px;
+    border-radius: 57px;
+    border: 1px solid #0000ff;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: normal;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #0000ff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #0000ff;
+    background: transparent;
+}

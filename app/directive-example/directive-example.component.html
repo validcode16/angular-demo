@@ -1,0 +1,38 @@
+
+<div style="
+border: 1px solid #000;
+padding: 29px;
+">
+
+<div class="container">
+    <button (click)="toggle()">Movie Toggle</button>
+
+    <div *ngIf="is_show_movie else movieNotFound">
+        <div>
+            <h2>Moview </h2>
+            <p>Description of Moview</p>
+        </div>
+    </div>
+    <ng-template #movieNotFound>
+        <div>
+            <h2>No movie present </h2>
+        </div>
+    </ng-template>
+    </div>
+</div>
+
+<div class="usrdata">
+    <div class="container">
+        <div class="usrdesc" *ngFor="let user of users">
+            <p>First Name: {{user.first_name}}</p>
+            <p>Last Name: {{user.last_name}}</p>
+            <p>Couse: {{user.course}}</p>
+            <p>Couse Month: {{user.course_month}}</p>
+        </div>
+    </div>
+
+    <div *ngFor="let number of numbers" class="numbox">
+        {{number}}
+    </div>
+
+</div>

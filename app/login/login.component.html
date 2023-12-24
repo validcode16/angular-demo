@@ -1,0 +1,24 @@
+<div class="reg-orm">
+    <h1>Login</h1>
+
+    <div class="container">
+        <div class="frm-data">
+            <form [formGroup]="loginForm">
+                <label>Email*</label>
+                <input type="email" name="email" formControlName="email"><br> 
+                <span *ngIf="email && email.invalid && email.touched" class="error">This is a required field</span><br>
+                
+                <label>Password*</label>
+                <input type="password" name="password" formControlName="password"><br>           
+                <span *ngIf="password && password.invalid && password.touched" class="error">This is a required field</span><br>
+                
+                <div class="btn-container button-container">
+                    <button type="submit" (click)="login(loginForm.value)" [disabled]="loginForm.invalid">Login</button>
+                   
+                </div>
+            </form> 
+            <div>{{message}}</div><br>
+            <p><a routerLink="/register">Register</a> Or Forget passord</p>
+        </div>
+    </div>
+</div>

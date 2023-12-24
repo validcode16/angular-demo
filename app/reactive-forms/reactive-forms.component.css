@@ -1,0 +1,40 @@
+.r-form {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #d4d4d4;
+}
+
+.error {
+	color: #c40909;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.r-form .btn-container {
+    padding: 12px;
+}
+
+.r-form button {
+    background: #1a1aa9;
+    color: #fff;
+    border: 1px solid #1a1aa9;
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 6px 19px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity:0.7;
+}

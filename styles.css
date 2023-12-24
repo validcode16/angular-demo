@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+.nav ul {
+	display: inline-flex;
+}
+
+.top-nav nav {
+	padding: 30px 5%;
+}
+
+.logo {
+	width: 200px;
+}
+
+.nav ul li {
+	list-style: none;
+    width: auto;
+    padding: 10px 25px;
+}
+
+.top-navbar {
+	padding: 12px 5%;
+	background: #acabab;
+}
+
+.navbar-brand {
+	font-size: 51px !important;
+	font-weight: 800;
+	letter-spacing: 1px;
+	background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 30px;
+}
+
+.navbar.bg-light {
+	background-color: transparent !important;
+}
+
+.nav ul li a{
+	text-decoration: unset;
+    color: #000;   
+}
+
+.nav ul li a:hover{
+	color: blue;   
+}
+
+
+.nav {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 48px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 38px;
+    padding-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1184px;
+    margin: auto;
+
+}
+
+.navbar-nav li a {
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+	padding: 3px 30px;
+	margin-left: 10px;
+}
+
+.navbar-nav li a:hover {
+	background: #55a290;
+}
+
+@media (min-width: 1024px){
+    .navbar {
+        display: flex;
+    }
+    #navbarNav {
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+}
+

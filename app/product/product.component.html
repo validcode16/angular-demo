@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="product-clm">
+        <div *ngFor="let product of products">
+            <p>Product Name: <span>{{product.product_name | uppercase }}</span></p>
+            <p>Brand: <span>{{product.brand | lowercase}}</span></p>
+            <p>Price: <span>{{product.price | currency:'INR': true: '3.2-2' }}</span></p>
+            <p>Description: <span>{{product.description | lowercase}}</span> </p>
+        </div>
+    </div>
+</div>

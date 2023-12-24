@@ -1,0 +1,17 @@
+<div class="form-container r-form">
+    <form [formGroup]="userForm">
+        <label>First Name:</label>    
+        <input type="text" name="first_name" formControlName="firstName">
+        <span *ngIf="firstName && firstName.invalid && firstName.touched" class="error">This is a required field</span><br>
+        <label>Last Name</label>
+        <input type="text" name="last_name" formControlName="lastName">
+        <span *ngIf="lastName && lastName.invalid && lastName.touched" class="error">This is a required field</span><br>
+        <label>Age</label>
+        <input type="text" name="usr_age" formControlName="usrAge">
+        <span *ngIf="usrAge && usrAge.invalid && usrAge.touched" class="error">This is a required field</span><br>
+        <div class="btn-container button-container">
+            <button type="submit" (click)="saveData(userForm)" [disabled]="userForm.invalid">Submit</button>
+        </div>
+    </form>
+</div>
+<br>

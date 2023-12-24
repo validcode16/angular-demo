@@ -1,0 +1,11 @@
+.upldimg {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.upldimg img {
+    width: 400px;
+    height: 350px;
+}

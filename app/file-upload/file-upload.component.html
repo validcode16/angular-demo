@@ -1,0 +1,15 @@
+<div class="container"><br>
+    <div class="formdata">
+        <form>
+          <input type="file" name="file" (change)="fileSelect($event)">
+          <br>
+          <button type="submit" (click)="sendFile()">Upload File</button>
+        </form>
+    
+    </div> 
+    <div class="upldimg">        
+        <div *ngFor="let image of images">
+            <img [src]="image">
+        </div> 
+    </div>
+</div>

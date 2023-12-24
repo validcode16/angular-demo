@@ -1,0 +1,19 @@
+.key-container {
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fmldata {
+    width: 48%;
+    border: 1px solid #d4d4d4;
+    padding: 20px 10px;
+    margin: 10px;
+}
+
+
+.fmldata span {
+	font-weight: 600;
+}

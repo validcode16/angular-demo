@@ -1,0 +1,16 @@
+
+<h1>Home</h1>
+
+<div *ngFor="let country of countries">
+    {{country.country_id + " " + country.probability}}
+</div>
+<div class="key-container">
+    <div *ngFor="let driver of drivers" class="fmldata">
+        <p><span>Driver Id:</span> {{driver.driverId}}</p>
+        <p><span>DOB:</span>   {{driver.dateOfBirth}}</p>
+        <p><span>Family Name:</span> {{driver.familyName}}</p>
+        <p><span>givenName:</span> {{driver.givenName}}</p>
+        <p><span>Nationality:</span> {{driver.nationality}}</p>
+        <p><span>URL:</span> <a [href]="driver.url" target="_blank">{{driver.url}}</a> </p>
+    </div>
+</div>

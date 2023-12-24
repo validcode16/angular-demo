@@ -1,0 +1,33 @@
+
+.outer-container { 
+
+}
+
+.inr-pgnav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.inr-pgnav ul li {
+	padding: 10px 25px;
+	background: #2d7532;
+    border-radius: 14px;
+    margin-right: 15px;
+}
+
+.inr-pgnav ul li:hover {
+	background: #000;
+}
+
+.inr-pgnav ul li a {
+	 color: #fff;
+     text-decoration: unset;
+}
+
+.inr-pgclm {
+	width: 70%;
+	margin: auto;
+	border: 1px solid #d4d4d4;
+	padding: 30px 20px;
+}

@@ -1,0 +1,113 @@
+<div class="main-clm">
+  <div class="top-navbar">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="logo">
+      <a class="navbar-brand" routerLink="home">APVC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="menu navbar-clm">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="file-upload">File Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="userService.isUserLoggedIn()" routerLink="restricted-product">Restricted Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="posts">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="test-practice">Testing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="demo">Demo</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="userService.isUserLoggedIn() == null" routerLink="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="userService.isUserLoggedIn()" (click)="logout()">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="userService.isUserLoggedIn() == null" routerLink="register">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>  
+  </div>
+  <router-outlet></router-outlet>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>First Angular page world! </h1> -->
+<!-- <h2>{{ "Hello " + name + calculate_result }}</h2>
+
+<input type="text" name="First Name" (keyup)="valueChanged($event)">
+
+ -->
+
+<!-- <app-reactive-forms></app-reactive-forms> -->
+
+<!-- <app-parent></app-parent> -->
+<!-- <app-form></app-form> -->
+
+<!-- <button [disabled]='disable_btn'>Click<
+    /button> -->
+
+<!-- <button (click) = "changeColor()">Change color</button>
+
+<p [class]="disable_btn ? 'color-red' : 'color-green'">Para check the when button is disable or enable</p>
+<p [class]="change_text_color ? 'color-red' : 'color-green'">Para check the when button is disable or enable</p> -->
+<!-- <app-second></app-second>
+<app-third></app-third>
+<app-five></app-five> -->
+<!-- <app-form></app-form> -->
+<!-- <app-directive-example></app-directive-example> -->
+<!-- <button (click)="toggle()">Toggle Div</button>
+<br>
+<p *ngIf="is_show == true">This is a dummy paragraph!</p> -->
